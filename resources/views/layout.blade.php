@@ -31,11 +31,12 @@
                         <div class="h" align="center">
                             <div class="bg_noel"></div>
                             <div class="menu2" style="background: #00467a;">
-                                <table width="100%" border="0" cellspacing="4">
+                                <table width="100%" border="0" cellspacing="5">
                                     <tr class="menu">
                                         <td @yield('sl1')><a href="{{ url('/') }}">Trang Chủ</a></td>
                                         <td @yield('sl2')><a href="{{ url('/gioi-thieu') }}">Giới Thiệu</a></td>
                                         <td @yield('sl3')><a href="{{ url('/dien-dan') }}" title="Diễn đàn">Diễn đàn</a></td>
+                                        <td @yield('sl4')><a href="{{ url('/shop') }}" title="Cửa Hàng">Cửa Hàng</a></td>
                                     </tr>
                                 </table>
                             </div>

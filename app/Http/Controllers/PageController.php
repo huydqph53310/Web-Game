@@ -24,6 +24,10 @@ class PageController extends Controller
         return view('forum');
     }
 
+    public function shop()
+    {
+        return view('shop');
+    }
     /**
      * Show the form for creating a new resource.
      */
