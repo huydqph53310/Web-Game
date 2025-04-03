@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Models\Game;
+namespace App\Models\Web;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Image extends Model
+class Product extends Model
 {
-    /** @use HasFactory<\Database\Factories\Game\ImageFactory> */
+    /** @use HasFactory<\Database\Factories\Web\ProductFactory> */
     use HasFactory;
 }

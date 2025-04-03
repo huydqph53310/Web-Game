@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('achievementrequires', function (Blueprint $table) {
-            $table->id(); // int NOT NULL AUTO_INCREMENT
-            $table->string('name', 255)->collation('utf8mb4_romanian_ci'); // varchar(255) COLLATE utf8mb4_romanian_ci NOT NULL
+            $table->id();
+            $table->string('name', 255)->collation('utf8mb4_romanian_ci');
         });
     }
 

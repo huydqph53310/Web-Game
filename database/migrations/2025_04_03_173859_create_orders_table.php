@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOrdersTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -12,8 +12,8 @@ class CreateOrdersTable extends Migration
     public function up(): void
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->id(); // Primary key
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->id();
+            $table->foreignId('user_id')->constrained();
             $table->integer('status');
             $table->string('payment', 255);
             $table->decimal('total', 10, 2);
@@ -31,4 +31,4 @@ class CreateOrdersTable extends Migration
     {
         Schema::dropIfExists('orders');
     }
-}
+};

@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('description', 255)->collation('utf8mb4_romanian_ci'); // varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_romanian_ci NOT NULL
             $table->integer('max'); // int NOT NULL
             $table->integer('rewardMoney'); // int NOT NULL
-
             // Foreign key constraint
             $table->foreign('id')->references('id')->on('achievementrequires')->onDelete('cascade');
         });
